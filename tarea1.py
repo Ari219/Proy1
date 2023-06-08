@@ -6,5 +6,11 @@ pastelería={"Nombre Producto":["vainilla", "chocolate", "red velvet", "marmolea
 "Costo de Produccion":[187500, 112500, 160000, 75000],
 "Margen de Beneficio":[187500, 112500, 160000, 75000],  
 "Precio de Venta": [375000, 225000, 360000, 150000]}
-df = pd.DataFrame(pastelería)
-print(df)
+pt = pd.DataFrame(pastelería)
+
+nuevos_datos={"Pago":["Transferencia","Transferencia", "Transferencia", "Transferencia"], 
+"Envío":["Retiro en local","Retiro en local", "Retiro en local", "Retiro en local"]}
+
+pt["Pago"] = nuevos_datos["Pago"]
+pt["Envío"] = nuevos_datos["Envío"]
+print(pt)
