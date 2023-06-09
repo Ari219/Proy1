@@ -14,3 +14,16 @@ nuevos_datos={"Pago":["Transferencia","Transferencia", "Transferencia", "Transfe
 pt["Pago"] = nuevos_datos["Pago"]
 pt["Envío"] = nuevos_datos["Envío"]
 print(pt)
+
+############
+####Marco###
+############
+actualización= {"Nombre Producto":["chispas", "banano", "manzana"], 
+"Cantidad de Ventas":[25,15,20], 
+"Costo de Produccion":[187500, 112500, 160000],
+"Margen de Beneficio":[187500, 112500, 160000],  
+"Precio de Venta": [375000, 225000, 320000],
+"Pago":["Trasferencia", "Trasferencia", "Trasferencia"],
+"Envío":["Retiro en local","Retiro en local", "Retiro en local"]}
+act=pd.concat([pt,pd.DataFrame(actualización)],ignore_index=True)
+print(act)
