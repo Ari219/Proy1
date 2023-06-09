@@ -27,3 +27,20 @@ actualización= {"Nombre Producto":["chispas", "banano", "manzana"],
 "Envío":["Retiro en local","Retiro en local", "Retiro en local"]}
 act=pd.concat([pt,pd.DataFrame(actualización)],ignore_index=True)
 print(act)
+
+##############
+#### Oscar ###
+##############
+
+update_centeno= {"Nombre Producto":["chantilli", "manzana", "melón"], 
+"Cantidad de Ventas":[234,1534,3420], 
+"Costo de Produccion":[18732500, 34234, 16000342340],
+"Margen de Beneficio":[34234, 234234, 32423423],  
+"Precio de Venta": [34234234, 234234, 45452],
+"Pago":["SINPE", "Trasferencia", "Crypto"],
+"Envío":["IBAN","IBAN", "IBAN"]}
+
+df_centeno = pd.DataFrame(update_centeno)
+
+act = act.append(df_centeno, ignore_index=True)
+print(act)
