@@ -27,3 +27,16 @@ actualización= {"Nombre Producto":["chispas", "banano", "manzana"],
 "Envío":["Retiro en local","Retiro en local", "Retiro en local"]}
 act=pd.concat([pt,pd.DataFrame(actualización)],ignore_index=True)
 print(act)
+
+###############
+####Jennifer###
+###############
+aporte_jenny= {"Nombre Producto":["Pie de manzana", "Cheescake"], 
+"Cantidad de Ventas":[30,17], 
+"Costo de Produccion":[120000, 130000],
+"Margen de Beneficio":[90000, 40000],  
+"Precio de Venta": [210000, 170000],
+"Pago":["Trasferencia", "Trasferencia"],
+"Envío":["Retiro en local","Retiro en local"]}
+act_2=pd.concat([act,pd.DataFrame(aporte_jenny)],ignore_index=True)
+print(act_2)
